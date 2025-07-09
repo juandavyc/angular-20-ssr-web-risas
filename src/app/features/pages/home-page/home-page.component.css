@@ -1,0 +1,14 @@
+:host {
+  display: block;
+}
+@layer utilities {
+  .collapse-arrow > .collapse-title::after {
+    top: 1.3rem;
+  }
+}
+
+/* @layer utilities {
+  :is(.list > :not(:last-child).list-row, .list > :not(:last-child) .list-row)::after {
+    border-color: #e3e3e3;
+  }
+} */

@@ -1,0 +1,9 @@
+:host {
+  display: block;
+}
+
+@layer utilities {
+  :is(.list > :not(:last-child).list-row, .list > :not(:last-child) .list-row)::after {
+    border-color: rgba(22, 22, 22, 0.18);
+  }
+}

@@ -1,0 +1,10 @@
+<div class="drawer">
+  <input type="checkbox" class="drawer-toggle" [checked]="isOpen()" />
+  <div class="drawer-content flex flex-col">
+    <ui-navbar (openDrawer)="toggleDrawer(true)" />
+    <router-outlet class="mt-16" />
+    <ui-footer />
+    <whatsapp />
+  </div>
+  <ui-sidebar class="drawer-side z-30" (closeDrawer)="toggleDrawer(false)" />
+</div>

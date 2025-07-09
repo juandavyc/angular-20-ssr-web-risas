@@ -1,0 +1,18 @@
+<nav class="fixed z-20 navbar bg-base-100 shadow-md ">
+  <div class="mx-2 flex-1 px-2">
+    <ui-logo />
+  </div>
+  <div class="hidden flex-none lg:block">
+    <menu-items />
+  </div>
+  <div class="join join-horizontal">
+    <a class="btn btn-accent join-item"
+      [href]="'tel:'+phoneNumber">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+    <swap-theme class="join-item" />
+    <button class="btn btn-accent join-item lg:hidden" (click)="openDrawer.emit()">
+      <i class="fa-solid fa-bars text-xl"></i>
+    </button>
+  </div>
+</nav>

@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+@plugin "daisyui" {
+  themes: fantasy --default, dracula --prefersdark;
+}
+
+body {
+  font-family: 'Roboto', Helvetica, sans-serif
+}
+
+/* @layer utilities {
+  .btn-error {
+    --btn-color: var(--color-error);
+  }
+} */
+
+:root {
+  --color-success: #5ebb2b;
+  --color-success-content: #22470d;
+}
+
+
+.router-active {
+  @apply border-b-3 border-success text-base-content font-bold rounded-none;
+}

@@ -1,0 +1,32 @@
+<footer class="footer sm:footer-horizontal bg-neutral-900 text-neutral-content px-10 py-20">
+  <aside>
+    <img class="rounded-lg w-36 h-36"
+      alt="logo"
+      [src]="logo" />
+    <p>
+      <br />
+      <i class="fa-solid fa-copyright"></i> Copyright <b>Bull Shark</b>.
+      <br />
+      Todos los derechos reservados {{year}}.
+    </p>
+  </aside>
+  <nav>
+    <h6 class="footer-title">
+      Enlaces
+    </h6>
+    <div class="grid grid-flow-row gap-[14px]">
+      <a class="link link-hover" [routerLink]="['/about-us']">
+        Nosotros
+      </a>
+      <a class="link link-hover" target="_blank">
+        Contacto
+      </a>
+      <a class="link link-hover" [routerLink]="['/term-and-conditions']">
+        Términos y condiciones
+      </a>
+      <a class="link link-hover text-success" href="https://juandavyc.netlify.app/home">
+        Designed & Developed by: <strong>juandavyc</strong>
+      </a>
+    </div>
+  </nav>
+</footer>

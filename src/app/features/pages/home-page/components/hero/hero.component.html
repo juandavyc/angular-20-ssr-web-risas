@@ -1,0 +1,39 @@
+<div class="swiper">
+  <swiper-container class="single-slider max-h-[70vh]"
+    autoplay-disable-on-interaction="false"
+    effect="fade"
+    #swiperRef>
+    @for (slide of slides; track $index;) {
+      <swiper-slide class="slide">
+        <div class="relative">
+          <img class="w-full h-[70vh] object-cover object-center soft-zoom-out"
+            [src]="slide.background" />
+          <div class="absolute top-0 bg-black/45 w-full h-full flex flex-col justify-center items-center pointer-events-none">
+            <div class="w-[90vw] flex flex-col lg:flex-row-reverse justify-between items-center gap-5">
+              <div class="flex">
+                <img class="rounded-lg max-w-96 h-48 animate-soft-bounce"
+                  alt="logo"
+                  [src]="slide.logo" />
+              </div>
+              <div class="flex flex-col gap-5 lg:text-start text-center text-white">
+                <h2 class="text-4xl lg:text-7xl ">
+                  {{slide.title}}
+                </h2>
+                <p class="text-lg md:text-xl ">
+                  {{slide.subtitle}}
+                </p>
+                <div class="flex lg:justify-start justify-center pointer-events-auto">
+                  <a class="btn btn-warning btn-lg shadow rounded-2xl"
+                    [routerLink]="['/',slide.action.url]">
+                      <i class="fa-solid" [class]="slide.action.icon"></i>
+                      {{slide.action.title}}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+    }
+  </swiper-container>
+</div>

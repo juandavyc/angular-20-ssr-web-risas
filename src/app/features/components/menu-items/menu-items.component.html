@@ -1,0 +1,49 @@
+<ul class="text-sm gap-1" [class]="menuClasses">
+  <li>
+    <a [routerLink]="['/']"
+      routerLinkActive="router-active"
+      [routerLinkActiveOptions]="{exact:true}">
+      <div class="sm:hidden block">
+          <i class="fa-solid fa-house text-neutral-400 w-5"></i>
+      </div>
+        Inicio
+    </a>
+  </li>
+  <li>
+    <a [routerLink]="['/about-us']"
+      routerLinkActive="router-active">
+      <div class="sm:hidden block">
+        <i class="fa-solid fa-briefcase text-neutral-400 w-5"></i>
+      </div>
+        Nosotros
+    </a>
+  </li>
+  <li>
+    <a [routerLink]="['/projects']"
+      routerLinkActive="router-active">
+      <div class="sm:hidden block">
+        <i class="fa-solid fa-briefcase text-neutral-400 w-5"></i>
+      </div>
+        Proyectos
+    </a>
+  </li>
+  <li>
+    <a [routerLink]="['/products']"
+      routerLinkActive="router-active">
+      <div class="sm:hidden block">
+        <i class="fa-solid fa-briefcase text-neutral-400 w-5"></i>
+      </div>
+        Productos
+    </a>
+  </li>
+  <li>
+    <a [routerLink]="['/contact-us']"
+      routerLinkActive="router-active">
+      <div class="sm:hidden block">
+        <i class="fa-solid fa-briefcase text-neutral-400 w-5"></i>
+      </div>
+        Contacto
+    </a>
+  </li>
+
+</ul>

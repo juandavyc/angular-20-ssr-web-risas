@@ -1,0 +1,33 @@
+<div class="mx-auto container flex justify-center py-10">
+  <div class="flex flex-col gap-5">
+    <div class="col-span-full">
+      <ui-title title="Beneficios y logros" data-aos="fade-up" />
+    </div>
+    <ul class="list bg-secondary/5 rounded-box shadow-md">
+      <li class="p-4 pb-2 text-xs opacity-60 tracking-wide">Resultados que nos respaldan</li>
+      @for (benefit of benefits; track $index; let index = $index; let even = $even) {
+      <li class="list-row items-center" data-aos="fade-right">
+        <div>
+          <i class="fa-solid fa-arrow-trend-up fa-xl text-success"></i>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg">
+            {{benefit.title}}
+          </h3>
+        </div>
+        <p class="list-col-wrap">
+          {{benefit.description}}
+        </p>
+        <div class="rating rating-xs" data-aos="fade-up">
+          <input type="radio" [name]="index" class="rating-hidden" aria-label="clear" />
+          <input type="radio" [name]="index" class="mask mask-star-2 bg-orange-400" aria-label="1 star" />
+          <input type="radio" [name]="index" class="mask mask-star-2 bg-orange-400" aria-label="2 star"  />
+          <input type="radio" [name]="index" class="mask mask-star-2 bg-orange-400" aria-label="3 star" />
+          <input type="radio" [name]="index" class="mask mask-star-2 bg-orange-400" aria-label="4 star" [checked]="even"/>
+          <input type="radio" [name]="index" class="mask mask-star-2 bg-orange-400" aria-label="5 star" [checked]="!even"/>
+        </div>
+      </li>
+      }
+    </ul>
+  </div>
+</div>

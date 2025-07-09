@@ -1,0 +1,55 @@
+<div class="flex justify-center my-5 mt-16">
+  <ui-title [title]="title" [subtitle]="subtitle" />
+</div>
+
+<section class="mx-auto container py-10 px-3">
+
+  <div class="flex md:flex-row flex-col gap-5">
+    <content-table (jumpTo)="scrollToElement($event)"/>
+
+    <div class="bg-base-100 rounded-xl shadow-lg border-base-200 border-[1px] sm:p-10 p-3">
+      <div class="flex flex-col gap-5">
+        <div #mision>
+          <h3 class="text-2xl font-bold text-success mb-2">
+            <span class="text-sm mr-1 text-base-content/30">1.</span>
+            Misión
+          </h3>
+          <p class="text-base-content leading-relaxed">
+            En <strong>Building Ecologically</strong> nos dedicamos a fabricar y comercializar mampostería y estructuras ecológicas a partir
+            de plástico PET
+            reciclado y residuos de construcción. Ofrecemos soluciones sostenibles, resistentes y accesibles, contribuyendo a la reducción
+            del
+            impacto ambiental y promoviendo prácticas responsables en la industria de la construcción.
+          </p>
+        </div>
+        <div #vision>
+          <h3 class="text-2xl font-bold text-success mb-2">
+            <span class="text-sm mr-1 text-base-content/30">2.</span>
+            Visión
+          </h3>
+          <p class="text-base-content leading-relaxed">
+            Ser <strong>líderes</strong> en el <strong>mercado colombiano e internacional</strong> de materiales ecológicos, promoviendo la
+            construcción sostenible mediante la
+            innovación con materiales reciclados. Aspiramos a transformar los residuos en oportunidades, reduciendo la contaminación y
+            fomentando un futuro más sostenible para las próximas generaciones.
+          </p>
+        </div>
+        <h3 class="text-2xl font-bold text-success mb-2" #timeLine>
+          <span class="text-sm mr-1 text-base-content/30">3.</span>
+            Linea del Tiempo
+        </h3>
+        <time-line class="bg-base-200/45 py-10 rounded"/>
+        <h3 class="text-2xl font-bold text-success mb-2" #commitment>
+          <span class="text-sm mr-1 text-base-content/30">4.</span>
+            Compromiso
+        </h3>
+        <ul class="space-y-1 text-base-content list-disc pl-6">
+          <li>Compromiso con la sostenibilidad y la economía circular.</li>
+          <li>Innovación en materiales reciclados como el PET y residuos de construcción.</li>
+          <li>Soluciones habitacionales para emergencias y comunidades vulnerables.</li>
+          <li>Producción local que genera empleo y fomenta el desarrollo sostenible.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

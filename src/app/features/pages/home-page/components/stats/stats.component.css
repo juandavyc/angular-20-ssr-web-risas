@@ -1,0 +1,10 @@
+:host {
+  display: block;
+}
+@layer utilities {
+  @supports (color: color-mix(in lab, red, red)) {
+    .stat:not(:last-child) {
+      border-inline-end: var(--border) dashed color-mix(in oklab, currentColor 10%, #3f3f3f94);
+    }
+  }
+}
