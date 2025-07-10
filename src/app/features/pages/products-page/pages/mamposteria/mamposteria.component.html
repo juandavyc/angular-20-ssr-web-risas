@@ -16,9 +16,7 @@
       {{'Mamposteria' | titlecase}}
     </h1>
   </div>
-  <div class="w-full">
-    <img src="/images/mamposteria.png" class="w-full h-auto object-contain rounded-box" />
-  </div>
+  <img src="/images/mamposteria.png" class="w-full h-auto object-contain rounded-box" />
   <buy-options />
   <div class="col-span-full">
     <div class="divider"></div>
@@ -87,11 +85,16 @@
             <li>• Construcciones temporales y módulos prefabricados</li>
             <li>• Rehabilitación post-desastres</li>
           </ul>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/tLa01v-ijIg?si=YNkBCER__-zL7uDp" title="YouTube video player"
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="relative w-full" style="padding-bottom: 45.25%;"> <!-- 16:9 Aspect Ratio -->
+            <div class="flex justify-center">
+              <iframe class="absolute sm:w-xl w-full h-full rounded-lg shadow-md"
+                src="https://www.youtube.com/embed/tLa01v-ijIg?si=YNkBCER__-zL7uDp" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+              </iframe>
+            </div>
+          </div>
         </div>
-
       </div>
       <input type="radio" name="my_tabs_1" class="tab" aria-label="Similares" disabled />
       <div class="tab-content bg-base-100 border-base-300 p-6">Similares</div>
