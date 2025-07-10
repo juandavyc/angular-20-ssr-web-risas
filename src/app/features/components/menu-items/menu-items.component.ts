@@ -3,7 +3,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 // import { AppAssets } from '@core/configs';
 
 const NAVBAR = 'menu menu-horizontal uppercase';
-const SIDEBAR = 'menu menu-vertical menu-lg uppercase w-full text-black';
+const SIDEBAR = 'menu menu-vertical menu-lg uppercase w-full';
 
 @Component({
   selector: 'menu-items',

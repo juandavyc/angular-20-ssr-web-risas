@@ -1,36 +1,47 @@
 <div class="flex flex-col gap-3">
+  <div class="flex md:flex-row flex-col gap-3">
+    <fieldset class="fieldset w-full">
+      <legend class="fieldset-legend text-base-content/50">Cantidad</legend>
+        <select class="select w-full">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+      </select>
+    </fieldset>
+    <fieldset class="fieldset w-full">
+      <legend class="fieldset-legend text-base-content/50">Método de pago</legend>
+      <select class="select w-full">
+        <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+        <option value="paypal">PayPal</option>
+        <option value="transferencia">Transferencia Bancaria</option>
+        <option value="efectivo">Pago en Efectivo (OXXO, Western Union)</option>
+        <option value="cripto">Criptomonedas (Bitcoin, Ethereum, USDT)</option>
+      </select>
+    </fieldset>
+  </div>
   <fieldset class="fieldset">
-    <legend class="fieldset-legend">Cantidad</legend>
-    <select class="select">
-      <option disabled selected>Seleccionar</option>
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-      <option>6</option>
-      <option>7</option>
-      <option>8</option>
-      <option>9</option>
-      <option>10</option>
-    </select>
-  </fieldset>
-  <fieldset class="fieldset">
-    <legend class="fieldset-legend text-accent-content">
+    <legend class="fieldset-legend text-base-content/50">
       Comprar o añadir
     </legend>
     <div class="grid sm:grid-cols-2 grid-cols-1 gap-3">
       <button class="btn btn-success">
-        <i class="fa-brands fa-whatsapp"></i>
-        Comprar / Cotizar
+        <i class="fa-solid fa-arrow-right-long"></i>
+        Comprar
       </button>
-      <button class="btn">
+      <button class="btn" disabled>
         Añadir al carrito
       </button>
     </div>
   </fieldset>
   <fieldset class="fieldset">
-    <legend class="fieldset-legend text-accent-content">
+    <legend class="fieldset-legend text-base-content/50 p-1">
       Medios de pago
     </legend>
     <div class="flex flex-row gap-3">
@@ -41,12 +52,12 @@
     </div>
   </fieldset>
   <fieldset class="fieldset">
-    <legend class="fieldset-legend text-accent-content">
+    <legend class="fieldset-legend text-base-content/50">
       Importante
     </legend>
-    <ul class="list-disc">
+    <ul class="list-disc pl-6 mt-2 space-y-1 marker:text-success/50">
       <li>Preguntar si el precio contempla costos de envío.</li>
-      <li>El pedido puede tardar entre <strong>2</strong><u>días hábiles</u> en estar listo.</li>
+      <li>El pedido puede tardar entre <strong>2</strong> <u>días hábiles</u> en estar listo.</li>
     </ul>
   </fieldset>
 </div>

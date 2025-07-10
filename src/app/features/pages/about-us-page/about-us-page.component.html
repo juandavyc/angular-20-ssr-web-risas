@@ -1,11 +1,11 @@
 <div class="flex justify-center my-5 mt-16">
-  <ui-title [title]="title" [subtitle]="subtitle" />
+  <ui-title [title]="title" />
 </div>
 
 <section class="mx-auto container py-10 px-3">
 
   <div class="flex md:flex-row flex-col gap-5">
-    <content-table (jumpTo)="scrollToElement($event)"/>
+    <content-table (jumpTo)="scrollToElement($event)" />
 
     <div class="bg-base-100 rounded-xl shadow-lg border-base-200 border-[1px] sm:p-10 p-3">
       <div class="flex flex-col gap-5">
@@ -36,18 +36,30 @@
         </div>
         <h3 class="text-2xl font-bold text-success mb-2" #timeLine>
           <span class="text-sm mr-1 text-base-content/30">3.</span>
-            Linea del Tiempo
+          Linea del Tiempo
         </h3>
-        <time-line class="bg-base-200/45 py-10 rounded"/>
+        <time-line class="bg-base-200/45 py-10 rounded" />
         <h3 class="text-2xl font-bold text-success mb-2" #commitment>
           <span class="text-sm mr-1 text-base-content/30">4.</span>
-            Compromiso
+          Compromiso
         </h3>
         <ul class="space-y-1 text-base-content list-disc pl-6">
-          <li>Compromiso con la sostenibilidad y la economía circular.</li>
-          <li>Innovación en materiales reciclados como el PET y residuos de construcción.</li>
-          <li>Soluciones habitacionales para emergencias y comunidades vulnerables.</li>
-          <li>Producción local que genera empleo y fomenta el desarrollo sostenible.</li>
+          <li class="flex gap-3 items-center">
+            <i class="fa-solid fa-circle-check text-success/75"></i>
+            <span>Compromiso con la sostenibilidad y la economía circular.</span>
+          </li>
+          <li class="flex gap-3 items-center">
+            <i class="fa-solid fa-circle-check text-success/75"></i>
+            <span>Innovación en materiales reciclados como el PET y residuos de construcción.</span>
+          </li>
+          <li class="flex gap-3 items-center">
+            <i class="fa-solid fa-circle-check text-success/75"></i>
+            <span>Soluciones habitacionales para emergencias y comunidades vulnerables.</span>
+          </li>
+          <li class="flex gap-3 items-center">
+            <i class="fa-solid fa-circle-check text-success/75"></i>
+            <span>Producción local que genera empleo y fomenta el desarrollo sostenible.</span>
+          </li>
         </ul>
       </div>
     </div>

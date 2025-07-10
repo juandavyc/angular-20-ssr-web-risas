@@ -18,7 +18,6 @@ import { TimeLineComponent } from './components/time-line/time-line.component';
 export default class AboutUsPageComponent {
 
   public readonly title = aboutUsConfig.title;
-  public readonly subtitle = aboutUsConfig.subtitle;
 
   private mision = viewChild<ElementRef<HTMLDivElement>>('mision');
   private vision = viewChild<ElementRef<HTMLDivElement>>('vision');

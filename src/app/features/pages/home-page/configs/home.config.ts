@@ -35,8 +35,8 @@ export const homeConfig = {
       "badges": ["Fácil ensamblaje", "Modular"]
     },
     {
-      "title": "mamposteria",
-      "description": "Estructuras temporales sostenibles para atención post-desastre, fáciles de transportar e instalar.",
+      "title": "Mamposteria",
+      "description": "Piezas para pavimentos fabricadas con residuos plásticos y escombros, resistentes y de bajo impacto ambiental.",
       "image": "/images/mamposteria.png",
       "linkText": "Ver más",
       "linkUrl": "mamposteria", //refugios
