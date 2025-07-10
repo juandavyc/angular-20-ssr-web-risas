@@ -1,0 +1,87 @@
+<div class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10">
+  <div class="col-span-full">
+    <div class="flex flex-row gap-3 justify-between">
+      <a class="btn btn-success" [routerLink]="['/products']">
+        <i class="fa-solid fa-arrow-left"></i>
+        Volver
+      </a>
+      <social-share />
+    </div>
+  </div>
+  <div class="col-span-full">
+    <div class="border-t border-dashed text-neutral/45 h-[1px]"></div>
+  </div>
+  <div class="col-span-full">
+    <h1 class="md:text-3xl lg:text-4xl xl:text-5xl font-semibold">
+      {{'Bloques Reciclados' | titlecase}}
+    </h1>
+  </div>
+  <div class="w-full">
+    <img src="/images/ladrillo.png" class="w-full h-auto object-contain rounded-box" />
+  </div>
+  <buy-options />
+  <div class="col-span-full">
+    <div class="divider"></div>
+  </div>
+  <div class="col-span-full">
+    <div class="tabs tabs-lift">
+      <input type="radio" name="my_tabs_1" class="tab" aria-label="Descripción" checked="checked" />
+      <div class="tab-content bg-base-100 border-base-300 p-6">
+        <div class="flex flex-col gap-5">
+          <p class="whitespace-pre-line">
+            Bloques ecológicos fabricados con <span class="font-semibold">plástico PET</span> y <span
+              class="font-semibold text-success">residuos de demolición</span>, diseñados para construcciones sostenibles con alta
+            resistencia y bajo impacto ambiental.
+          </p>
+          <section class="flex flex-col justify-center items-center px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Proceso de Fabricación</h2>
+            <ul class="steps sm:steps-horizontal steps-vertical">
+              <li class="step step-neutral">
+                Recolección
+              </li>
+              <li class="step step-neutral">
+                Trituración
+              </li>
+              <li class="step step-neutral">
+                Mezcla
+              </li>
+              <li class="step step-neutral">
+                Prensado
+              </li>
+            </ul>
+          </section>
+          <h3 class="text-xl font-bold">Especificaciones Técnicas</h3>
+          <ul class="list bg-success/15 rounded-box shadow-md">
+            <li class="list-row"><strong>Materiales:</strong> 60% plástico PET reciclado, 30% residuos de construcción (RCD), 10% aditivos
+              naturales.</li>
+            <li class="list-row"><strong>Resistencia:</strong> 30.5 MPa (equivalente a bloques tradicionales).</li>
+            <li class="list-row"><strong>Dimensiones:</strong> 20cm x 40cm x 15cm.</li>
+            <li class="list-row"><strong>Peso:</strong> 30% más liviano que el concreto.</li>
+            <li class="list-row"><strong>Aislamiento:</strong> Térmico y acústico superior.</li>
+          </ul>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <div class="card bg-info/15">
+              <div class="card-body">
+                <h3 class="card-title"> Ecológicos</h3>
+                <p>Reducen 10.5 toneladas de plástico por vivienda (según p. 10 del informe).</p>
+              </div>
+            </div>
+            <div class="card bg-info/15">
+              <div class="card-body">
+                <h3 class="card-title"> Económicos</h3>
+                <p>20% más baratos que los bloques tradicionales (p. 17, análisis competitivo).</p>
+              </div>
+            </div>
+          </div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/mxmyIwBt1qA?si=lA3IeLtxaLFVPFnQ" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+      <input type="radio" name="my_tabs_1" class="tab" aria-label="Similares" disabled />
+      <div class="tab-content bg-base-100 border-base-300 p-6">Similares</div>
+      <input type="radio" name="my_tabs_1" class="tab" aria-label="Reseñas" disabled />
+      <div class="tab-content bg-base-100 border-base-300 p-6">Reseñas</div>
+    </div>
+  </div>
+</div>

@@ -24,3 +24,14 @@ body {
 .router-active {
   @apply border-b-3 border-success text-base-content font-bold rounded-none;
 }
+
+@layer base {
+  input::placeholder {
+    @apply text-neutral-400;
+  }
+}
+@layer utilities {
+  :is(.list > :not(:last-child).list-row, .list > :not(:last-child) .list-row)::after {
+    border-color: #8a8a8a7c;
+  }
+}

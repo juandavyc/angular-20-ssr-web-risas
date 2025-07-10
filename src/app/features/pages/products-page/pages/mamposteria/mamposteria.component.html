@@ -1,0 +1,102 @@
+<div class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10">
+  <div class="col-span-full">
+    <div class="flex flex-row gap-3 justify-between">
+      <a class="btn btn-success" [routerLink]="['/products']">
+        <i class="fa-solid fa-arrow-left"></i>
+        Volver
+      </a>
+      <social-share />
+    </div>
+  </div>
+  <div class="col-span-full">
+    <div class="border-t border-dashed text-neutral/45 h-[1px]"></div>
+  </div>
+  <div class="col-span-full">
+    <h1 class="md:text-3xl lg:text-4xl xl:text-5xl font-semibold">
+      {{'Mamposteria' | titlecase}}
+    </h1>
+  </div>
+  <div class="w-full">
+    <img src="/images/mamposteria.png" class="w-full h-auto object-contain rounded-box" />
+  </div>
+  <buy-options />
+  <div class="col-span-full">
+    <div class="divider"></div>
+  </div>
+  <div class="col-span-full">
+    <div class="tabs tabs-lift">
+      <input type="radio" name="my_tabs_1" class="tab" aria-label="Descripción" checked="checked" />
+      <div class="tab-content bg-base-100 border-base-300 p-6">
+        <div class="flex flex-col gap-5">
+          <p class="whitespace-pre-line">
+            Bloques de <span class="font-semibold text-success">construcción ecológica</span> fabricados con <span
+              class="font-semibold">plástico PET reciclado</span> y <span class="font-semibold">residuos de demolición</span>, diseñados
+            para edificaciones sostenibles con alta resistencia y aislamiento térmico-acústico superior.
+          </p>
+
+          <section class="flex flex-col justify-center items-center px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Proceso de Fabricación</h2>
+            <ul class="steps sm:steps-horizontal steps-vertical">
+              <li class="step step-neutral">
+                Recolección de materiales
+              </li>
+              <li class="step step-neutral">
+                Trituración y limpieza
+              </li>
+              <li class="step step-neutral">
+                Mezcla con aditivos
+              </li>
+              <li class="step step-neutral">
+                Prensado a alta presión
+              </li>
+            </ul>
+          </section>
+
+          <h3 class="text-xl font-bold">Especificaciones Técnicas</h3>
+          <ul class="list bg-success/15 rounded-box shadow-md">
+            <li class="list-row"><strong>Composición:</strong> 60% plástico PET, 30% residuos de construcción (RCD), 10% aditivos naturales
+            </li>
+            <li class="list-row"><strong>Resistencia:</strong> 30.5 MPa (cumple normas NSR-10 para mampostería no estructural)</li>
+            <li class="list-row"><strong>Dimensiones estándar:</strong> 20cm (alto) x 40cm (largo) x 15cm (ancho)</li>
+            <li class="list-row"><strong>Peso:</strong> 2.8 kg/unidad (30% más liviano que el bloque tradicional)</li>
+            <li class="list-row"><strong>Rendimiento:</strong> 25 bloques/m² en muro estándar</li>
+          </ul>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <div class="card bg-info/15">
+              <div class="card-body">
+                <h3 class="card-title"> Impacto Ambiental</h3>
+                <p>Cada bloque reutiliza ≈12 botellas PET y 3kg de escombros, reduciendo 5kg de CO₂ vs. bloques de concreto (p. 10 del
+                  informe).</p>
+              </div>
+            </div>
+            <div class="card bg-info/15">
+              <div class="card-body">
+                <h3 class="card-title"> Ventajas Constructivas</h3>
+                <p>30% más rápido de instalar, requiere menos mortero y es compatible con sistemas tradicionales (p. 17, análisis
+                  competitivo).</p>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-bold">Aplicaciones Recomendadas</h3>
+          <ul class="space-y-2">
+            <li>• Muros divisorios en viviendas y edificios</li>
+            <li>• Cerramientos exteriores no estructurales</li>
+            <li>• Proyectos de vivienda social sostenible</li>
+            <li>• Construcciones temporales y módulos prefabricados</li>
+            <li>• Rehabilitación post-desastres</li>
+          </ul>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/tLa01v-ijIg?si=YNkBCER__-zL7uDp" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+      </div>
+      <input type="radio" name="my_tabs_1" class="tab" aria-label="Similares" disabled />
+      <div class="tab-content bg-base-100 border-base-300 p-6">Similares</div>
+      <input type="radio" name="my_tabs_1" class="tab" aria-label="Reseñas" disabled />
+      <div class="tab-content bg-base-100 border-base-300 p-6">Reseñas</div>
+    </div>
+  </div>
+</div>

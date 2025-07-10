@@ -4,7 +4,7 @@ export const routes: Routes = [
 
   {
     path: '',
-    loadChildren: () => import('./features/app.routes'),
+    loadChildren: () => import('./features/features.routes'),
   },
   {
     path:'**',

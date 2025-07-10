@@ -1,0 +1,49 @@
+<fieldset class="fieldset bg-[#FCFBFA] border border-base-300 p-4 rounded-box text-base">
+  <legend class="fieldset-legend lg:hidden block">Filtros</legend>
+  <div>
+    <div class="flex flex-col gap-3 me-3">
+      <label class="font-semibold">Precios</label>
+      <div class="grid grid-cols-2 gap-3">
+
+        <input type="text"
+          formControlName="minPrice"
+          class="input bg-white"
+          placeholder="Minimo" disabled />
+
+        <input type="text"
+          formControlName="maxPrice"
+          class="input bg-white"
+          placeholder="Maximo" disabled/>
+
+      </div>
+      <label class="font-semibold">Categorías</label>
+      <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-col-2 gap-3">
+        @for (category of categories; track category.id; let first = $first;) {
+          <label class="flex items-center gap-2">
+            <input type="radio"
+              formControlName="category"
+              name="category"
+              [value]="category.name"
+              [checked]="first"
+              class="radio bg-white" />
+            <span class="cursor-pointer">
+              {{category.name}}
+            </span>
+          </label>
+        }
+      </div>
+      <label class="font-semibold">Ocasiones</label>
+      <div class="flex flex-wrap gap-2">
+        @for (occasion of materials; track occasion.id; let first = $first;) {
+          <input type="radio"
+            formControlName="occasion"
+            name="occasion"
+            class="join-item btn"
+            [value]="occasion.name"
+            [checked]="first"
+            [attr.aria-label]="occasion.name| titlecase"/>
+        }
+      </div>
+    </div>
+  </div>
+</fieldset>

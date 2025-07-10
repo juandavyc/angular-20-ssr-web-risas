@@ -1,13 +1,13 @@
 <div class="my-5 bg-secondary/5 py-10">
   <div class="mx-auto container flex justify-center p-3">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-10">
       <div class="col-span-full">
         <ui-title title="Productos y Servicios" data-aos="fade-up"/>
       </div>
       @for (product of products; track $index) {
         <div class="card bg-base-100 shadow-sm" data-aos="fade-up">
           <figure>
-            <img src="images/habitaciones.jpg" alt="Rooms" />
+            <img [src]="product.image" alt="Rooms" />
           </figure>
           <div class="card-body">
             <h2 class="card-title">
@@ -26,7 +26,7 @@
               }
             </div>
             <div class="card-actions justify-end">
-              <a [routerLink]="['/products']"
+              <a [routerLink]="['/products', product.linkUrl]"
                 class="btn btn-success"
                 data-aos="fade-right">
                   <i class="fa-solid fa-arrow-right-long"></i>

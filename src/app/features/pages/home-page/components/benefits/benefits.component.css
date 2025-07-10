@@ -1,5 +1,0 @@
-@layer utilities {
-  :is(.list > :not(:last-child).list-row, .list > :not(:last-child) .list-row)::after {
-    border-color: #8a8a8a7c;
-  }
-}

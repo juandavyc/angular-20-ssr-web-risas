@@ -1,39 +1,4 @@
 export const homeConfig = {
-  hero: [
-    {
-      title: 'Materiales Ecológicos',
-      subtitle: 'Transformamos residuos en soluciones sostenibles',
-      action: {
-        title: 'Escríbenos',
-        icon: 'fa-arrow-right-long',
-        url: 'contact-us'
-      },
-      background: 'images/hero-0.jpg',
-      logo: 'images/logo.png',
-    },
-    {
-      title: 'Kits para Emergencias',
-      subtitle: 'Construcciones modulares rápidas y seguras',
-      action: {
-        title: 'Ver productos',
-        icon: 'fa-arrow-right-long',
-        url: 'projects'
-      },
-      background: 'images/hero-1.jpg',
-      logo: 'images/logo.png',
-    },
-    {
-      title: 'Prefabricados Personalizados',
-      subtitle: 'Adaptados a tus necesidades',
-      action: {
-        title: 'Cotiza ahora',
-        icon: 'fa-arrow-right-long',
-        url: 'projects'
-      },
-      background: 'images/hero-2.jpg',
-      logo: 'images/logo.png',
-    },
-  ],
   highlights: [
     {
       title: 'Calidad en el servicio',
@@ -62,37 +27,29 @@ export const homeConfig = {
   ],
   products: [
     {
-      "title": "Bloques reciclados",
-      "description": "Bloques ecológicos fabricados con plástico PET y residuos de demolición, ideales para construcciones sostenibles.",
-      "image": "/assets/img/bloques-reciclados.png",
+      "title": "Kits post desastre",
+      "description": "Estructuras temporales sostenibles para atención post-desastre, fáciles de transportar e instalar.",
+      "image": "/images/kit.png",
       "linkText": "Ver más",
-      "linkUrl": "", //bloques-reciclados
-      "badges": ["Ecológico", "Alta resistencia"]
-    },
-    {
-      "title": "Kits prefabricados",
-      "description": "Soluciones modulares rápidas y fáciles de ensamblar, pensadas para construcción temporal y emergencias.",
-      "image": "/assets/img/kits-prefabricados.png",
-      "linkText": "Cotizar",
-      "linkUrl": "", //kits-prefabricados
+      "linkUrl": "kits-post-desastre", //kits-prefabricados
       "badges": ["Fácil ensamblaje", "Modular"]
     },
     {
-      "title": "Refugios de emergencia",
+      "title": "mamposteria",
       "description": "Estructuras temporales sostenibles para atención post-desastre, fáciles de transportar e instalar.",
-      "image": "/assets/img/refugios-emergencia.png",
+      "image": "/images/mamposteria.png",
       "linkText": "Ver más",
-      "linkUrl": "", //refugios
+      "linkUrl": "mamposteria", //refugios
       "badges": ["Portable", "Rápida instalación"]
     },
     {
-      "title": "Adoquines ecológicos",
-      "description": "Piezas para pavimentos fabricadas con residuos plásticos y escombros, resistentes y de bajo impacto ambiental.",
-      "image": "/assets/img/adoquines.png",
+      "title": "Bloques reciclados",
+      "description": "Bloques ecológicos fabricados con plástico PET y residuos de demolición, ideales para construcciones sostenibles.",
+      "image": "/images/ladrillo.png",
       "linkText": "Ver más",
-      "linkUrl": "", //adoquines
-      "badges": ["Residuos reciclados", "Duraderos"]
-    }
+      "linkUrl": "bloques-reciclados", //bloques-reciclados
+      "badges": ["Ecológico", "Alta resistencia"]
+    },
   ],
   benefits: [
     {

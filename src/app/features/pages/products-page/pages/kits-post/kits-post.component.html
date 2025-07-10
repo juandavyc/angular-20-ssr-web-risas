@@ -1,0 +1,103 @@
+<div class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10">
+  <div class="col-span-full">
+    <div class="flex flex-row gap-3 justify-between">
+      <a class="btn btn-success" [routerLink]="['/products']">
+        <i class="fa-solid fa-arrow-left"></i>
+        Volver
+      </a>
+      <social-share />
+    </div>
+  </div>
+  <div class="col-span-full">
+    <div class="border-t border-dashed text-neutral/45 h-[1px]"></div>
+  </div>
+  <div class="col-span-full">
+    <h1 class="md:text-3xl lg:text-4xl xl:text-5xl font-semibold">
+      {{'Kits Post Desastre ' | titlecase}}
+    </h1>
+  </div>
+  <div class="w-full">
+    <img src="/images/kit.png" class="w-full h-auto object-contain rounded-box" />
+  </div>
+  <buy-options />
+  <div class="col-span-full">
+    <div class="divider"></div>
+  </div>
+  <div class="col-span-full">
+    <div class="tabs tabs-lift">
+      <input type="radio" name="my_tabs_1" class="tab" aria-label="Descripción" checked="checked" />
+      <div class="tab-content bg-base-100 border-base-300 p-6">
+        <div class="flex flex-col gap-5">
+          <p class="whitespace-pre-line">
+            Kits modulares de <span class="font-semibold text-success">refugio temporal</span> fabricados con <span
+              class="font-semibold">plástico reciclado</span>, diseñados para ensamblaje rápido en zonas afectadas por desastres
+            naturales. Incluyen todo lo necesario para una instalación inmediata.
+          </p>
+
+          <section class="flex flex-col justify-center items-center px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Ensamblaje en 4 Pasos</h2>
+            <ul class="steps sm:steps-horizontal steps-vertical">
+              <li class="step step-neutral">
+                Desembalaje
+              </li>
+              <li class="step step-neutral">
+                Anclaje al suelo
+              </li>
+              <li class="step step-neutral">
+                Armado de estructura
+              </li>
+              <li class="step step-neutral">
+                Colocación de paneles
+              </li>
+            </ul>
+          </section>
+
+
+          <h3 class="text-xl font-bold">Características Clave</h3>
+          <ul class="list bg-success/15 rounded-box shadow-md">
+            <li class="list-row"><strong>Materiales:</strong> 70% plástico HDPE reciclado, 20% aluminio reciclado, 10% aislante térmico.
+            </li>
+            <li class="list-row"><strong>Tiempo de instalación:</strong> Menos de 2 horas (sin necesidad de herramientas especializadas).
+            </li>
+            <li class="list-row"><strong>Capacidad:</strong> 4-6 personas por módulo (10m²).</li>
+            <li class="list-row"><strong>Durabilidad:</strong> Resistente a lluvia, vientos de hasta 80 km/h y variaciones térmicas (-5°C
+              a 45°C).</li>
+            <li class="list-row"><strong>Vida útil:</strong> 18-24 meses en condiciones extremas.</li>
+          </ul>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <div class="card bg-info/15">
+              <div class="card-body">
+                <h3 class="card-title"> Respuesta Rápida</h3>
+                <p>Pueden desplegarse en 72 horas post-desastre (referencia: p. 4 del informe, sección de justificación).</p>
+              </div>
+            </div>
+            <div class="card bg-info/15">
+              <div class="card-body">
+                <h3 class="card-title"> Sostenibilidad</h3>
+                <p>Cada kit reutiliza ≈800 botellas plásticas, evitando 150kg de CO₂ vs. tiendas tradicionales (p. 10, casos de éxito).
+                </p>
+              </div>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold">¿Qué incluye cada kit?</h3>
+          <ul class="space-y-2">
+            <li>• 12 paneles modulares (paredes y techo)</li>
+            <li>• Estructura metálica desmontable</li>
+            <li>• Kit de anclaje para terrenos irregulares</li>
+            <li>• Manual pictográfico multilingüe</li>
+            <li>• Sellador impermeabilizante</li>
+          </ul>
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/_SxAlZjfZIY?si=5VIxH1Luqo-sI7Kk" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+      <input type="radio" name="my_tabs_1" class="tab" aria-label="Similares" disabled />
+      <div class="tab-content bg-base-100 border-base-300 p-6">Similares</div>
+      <input type="radio" name="my_tabs_1" class="tab" aria-label="Reseñas" disabled />
+      <div class="tab-content bg-base-100 border-base-300 p-6">Reseñas</div>
+    </div>
+  </div>
+</div>

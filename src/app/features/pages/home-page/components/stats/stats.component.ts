@@ -12,22 +12,22 @@ export class StatsComponent {
 
   public readonly stats: Stat[] = [
     {
-      title: 'Sedes',
-      value: 2,
-      description: 'Activas',
-      icon: 'fa-regular fa-bookmark',
+      title: 'Reducción',
+      value: '40%',
+      description: 'de CO2',
+      icon: 'fa-solid fa-leaf',
     },
     {
-      title: 'Calidad',
+      title: 'Materiales',
       value: '100%',
-      description: 'Premium',
-      icon: 'fa-regular fa-newspaper',
+      description: 'Reciclados',
+      icon: 'fa-solid fa-recycle',
     },
     {
-      title: 'Años de',
-      value: '5',
-      description: 'Experiencia',
-      icon: 'fa-regular fa-envelope',
+      title: 'Clientes',
+      value: '85%',
+      description: 'Satisfechos',
+      icon: 'fa-solid fa-smile',
     }
   ];
 

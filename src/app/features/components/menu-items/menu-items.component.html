@@ -18,7 +18,16 @@
         Nosotros
     </a>
   </li>
-  <li>
+    <li>
+    <a [routerLink]="['/sustainable-construction']"
+      routerLinkActive="router-active">
+      <div class="sm:hidden block">
+        <i class="fa-solid fa-briefcase text-neutral-400 w-5"></i>
+      </div>
+        Construccion sostenible
+    </a>
+  </li>
+  <!-- <li>
     <a [routerLink]="['/projects']"
       routerLinkActive="router-active">
       <div class="sm:hidden block">
@@ -26,7 +35,7 @@
       </div>
         Proyectos
     </a>
-  </li>
+  </li> -->
   <li>
     <a [routerLink]="['/products']"
       routerLinkActive="router-active">

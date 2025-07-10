@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'ui-logo',
@@ -10,4 +11,9 @@ import { RouterLink } from '@angular/router';
   styleUrl: './logo.component.css',
   //changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class LogoComponent { }
+export class LogoComponent {
+
+  public readonly appName = environment.appName;
+  public readonly appNameAlt = environment.appNameAlt;
+
+}
